@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center pt-3">
+                <h2>Bootstrap Modal Wizard</h2>
+                <hr>
+                <button id="pushBtn" class="btn btn-secondary" data-toggle="modal"
+                        data-target="#exampleModal1" data-backdrop="static" data-keyboard="false">
+                    Launch Modal 1
+                </button>
+            </div>
+            <!-- Modal Start -->
+            <div class="modal fade" id="exampleModal1" role="dialog" aria-labelledby="exampleModalLabel"
+                 data-current-step="1" aria-hidden="true">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            @Html.Partial("~/Views/PopupInfo/_Popup1.cshtml")
+
+                            @Html.Partial("~/Views/PopupInfo/_Popup2.cshtml")
+
+                            @Html.Partial("~/Views/PopupInfo/_Popup3.cshtml")
+
+                            @Html.Partial("~/Views/PopupInfo/_Popup4.cshtml")
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-step-to="prev">
+                                    Previous
+                                </button>
+                                <button type="button" class="btn btn-success" data-step-to="next">
+                                    Next
+                                </button>
+                                <button type="submit" class="btn btn-info" data-dismiss="modal">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End -->
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+{
+    <script>
+
+        $('#exampleModal1').modalWizard().on('submit',
+            function (e) {
+                alert('submited');
+                $(this).trigger('reset');
+
+                $(this).modal('hide');
+            });
+    </script>
+}

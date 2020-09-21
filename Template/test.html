@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center pt-3">
+                    <h2>Modal Wizard</h2>
+                    <hr>
+                    <button id="pushBtn" class="btn btn-secondary" data-toggle="modal"
+                        data-target="#exampleModal1">Launch Modal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal1" role="dialog" aria-labelledby="exampleModalLabel" data-current-step="1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document" style="width:1250px;">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4" style="background-color: #091E42;color: #ffffff;padding: 20px;">
+                            <div class="onboarding-main">
+                                <div class="onboarding-steps">
+                                    <div class="wizard">
+                                        <div style="text-align: center;">
+                                            <img src="https://livechat.oncustomer.asia/favicon.ico" width="36">
+                                        </div>
+
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
+                                                    aria-expanded="true">
+                                                    <p class="active">Bắt đầu</p>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                                    aria-expanded="false">
+                                                    <p class="">Hiển thị của ứng dụng</p></span>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab">
+                                                    <p class="">Hiển thị của bạn</p>
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab">
+                                                    <p class="">Cài đặt lên website</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="onboarding-content  tab-content">
+                                <div class="tab-pane active" role="tabpanel" id="step1">
+                                    <div class="step-one">
+                                        <div class="onboarding-step-title">Chào mừng bạn đến với OnCustomer</div>
+                                        <div>
+                                            <img src="https://livechat.oncustomer.asia/images/onboarding-frame.svg">
+                                        </div>
+                                        <p>Là Nền tảng giao tiếp khách hàng đa kênh đầu tiên, chúng tôi đồng hành cùng
+                                            bạn
+                                            trong việc thu hút, tạo lead và giao tiếp với khách hàng hiệu quả, dù khách
+                                            hàng
+                                            ở trên Website, Facebook, Zalo hay thậm chí là điện thoại.</p>
+                                    </div>
+                                    <div class="step-footer">
+                                        <button type="button" class="btn next btn-info next-step"><span>Bắt
+                                                đầu ngay</span></button>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" role="tabpanel" id="step2">
+                                    <div class="step-footer">
+                                        <button type="button" class="ant-btn back">
+                                            <span>Trở lại</span>
+                                        </button>
+                                        <button type="button" class="ant-btn next ant-btn-primary">
+                                            <span>Tiếp theo</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
