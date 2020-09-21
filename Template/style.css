@@ -8,7 +8,9 @@
 .onboarding-steps>div>p.active {
     color: #fff;
 }
-
+.nav-tabs {
+    border: none;
+}
 .onboarding-content .step-one .onboarding-step-title {
     margin-top: 56px;
     margin-bottom: 56px;
