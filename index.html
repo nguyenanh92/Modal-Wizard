@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg"
+                data-backdrop="static" data-keyboard="false">Popup</button>
+
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tutorials !</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+                        <div class="modal-body">
+                            <div class="wizard">
+                                <div class="wizard-inner" style="display: none;">
+                                    <div class="connecting-line">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active">
+                                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab"
+                                                    aria-expanded="true"><span class="round-tab"></span> </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab"
+                                                    aria-expanded="false"><span class="round-tab"></span> </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab">
+                                                    <span class="round-tab"></span> </a>
+                                            </li>
+                                            <li role="presentation" class="disabled">
+                                                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab">
+                                                    <span class="round-tab"></span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="step1">
+                                        <div class="animate__animated animate__zoomIn ">
+                                            <img src="https://petmaster.vn/petroom/wp-content/uploads/2020/04/meo-anh-1.jpg"
+                                                width="100%" height="450" />
+                                        </div>
+                                        <div class="list-inline pull-right">
+                                            <button type="button" class="btn btn-primary next-step">Skip</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step2">
+                                        <div class=" animate__animated animate__zoomIn">
+                                            <img src="https://pethealth.vn/wp-content/uploads/2018/04/trieu-chung-benh-giam-bach-cau-o-meo-696x361.jpg"
+                                                width="100%" height="450" />
+                                        </div>
+
+                                        <div class="list-inline pull-right">
+                                            <button type="button" class="btn btn-secondary prev-step">Back</button>
+                                            <button type="button" class="btn btn-primary next-step">Skip</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="step3">
+                                        <div class=" animate__animated animate__zoomIn">
+                                            <img width="100%" height="450"
+                                                src="https://suckhoecuocsong.vn/uploads/Cham_vat_nuoi/benh-nam-o-meo-nguyen-nhan-do-dau-cach-dieu-tri-hieu-qua-nhat-anh-suckhoecuocsong.vn.jpg" />
+
+                                        </div>
+                                        <div class="list-inline pull-right">
+                                            <button type="button" class="btn btn-secondary prev-step">Back</button>
+                                            <button type="button" class="btn btn-primary next-step">Skip</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" role="tabpanel" id="step4">
+                                        <div class=" animate__animated animate__zoomIn">
+                                            <img src="https://photo-1-baomoi.zadn.vn/w1000_r1/2019_11_09_23_32885990/8a0f6c18f85811064849.jpg"
+                                                width="100%" height="450" />
+
+                                        </div>
+
+                                        <div class="list-inline pull-right">
+                                            <button type="button" class="btn btn-secondary prev-step">Back</button>
+                                            <button type="button" class="btn btn-success skip-btn"
+                                                data-dismiss="modal">Finish</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
